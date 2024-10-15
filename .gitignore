@@ -1,0 +1,11 @@
+.vscode/*
+__pycache__/
+config.py
+**/key.py
+env/
+db.sqlite3
+.env
+/Lib
+cert.crt
+cert.key
+bookmarks/media/*
