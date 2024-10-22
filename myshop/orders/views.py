@@ -1,14 +1,13 @@
-from cart.cart import Cart
+import weasyprint
 from django.contrib.admin.views.decorators import staff_member_required
+from django.contrib.staticfiles import finders
+from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
+from django.template.loader import render_to_string
+from cart.cart import Cart
 from .forms import OrderCreateForm
 from .models import Order, OrderItem
 from .tasks import order_created
-import weasyprint
-from django.contrib.staticfiles import finders
-from django.http import HttpResponse
-from django.template.loader import render_to_string
-
 
 # Create your views here.
 

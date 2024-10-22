@@ -23,14 +23,14 @@ def stripe_webhook(request):
 
     if event.type == 'checkout.session.completed':
         session = event.data.object
-        if(
+        if (
             session.mode == 'payment'
             and session.payment_status == 'paid'
         ):
-            try: 
+            try:
                 order = Order.objects.get(
                     id=session.client_reference_id
-            )
+                )
             except Order.DoesNotExist:
                 return HttpResponse(status=404)
             # mark order as paid
