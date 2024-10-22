@@ -9,7 +9,6 @@ def stripe_webhook(request):
     payload = request.body
     sig_header = request.META['HTTP_STRIPE_SIGNATURE']
     event = None
-
     try:
         event = stripe.Webhook.construct_event(
             payload, sig_header, settings.STRIPE_WEBHOOK_SECRET
@@ -19,16 +18,17 @@ def stripe_webhook(request):
         return HttpResponse(status=400)
     except stripe.error.SignatureVerificationError as e:
         # Invalid signature
-        return HttpResponse(status=200)
+        return HttpResponse(status=400)
 
     if event.type == 'checkout.session.completed':
         session = event.data.object
         if(
             session.mode == 'payment'
-            and  session.payment_status == 'paid'
+            and session.payment_status == 'paid'
         ):
-            try: order = Order.objects.get(
-                id=session.client_reference_id
+            try: 
+                order = Order.objects.get(
+                    id=session.client_reference_id
             )
             except Order.DoesNotExist:
                 return HttpResponse(status=404)
@@ -36,6 +36,4 @@ def stripe_webhook(request):
             order.paid = True
             order.save()
 
-
     return HttpResponse(status=200)
-
