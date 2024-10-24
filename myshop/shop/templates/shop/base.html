@@ -16,8 +16,7 @@
           {% if total_items > 0 %}
             {% translate "Your cart" %}:
             <a href="{% url "cart:cart_detail" %}">
-              {% blocktranslate with total=cart.get_total_price count 
-items=total_items %}
+              {% blocktranslate with total=cart.get_total_price count items=total_items %}
                 {{ items }} item, ${{ total }}
               {% plural %}
                 {{ items }} items, ${{ total }}
