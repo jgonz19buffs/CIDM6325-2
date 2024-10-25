@@ -18,7 +18,7 @@ class ProductAdmin(TranslatableAdmin):
         'price',
         'available',
         'created',
-        'updated'
+        'updated',
     ]
     list_filter = ['available', 'created', 'updated']
     list_editable = ['price', 'available']

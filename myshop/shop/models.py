@@ -5,15 +5,15 @@ from parler.models import TranslatableModel, TranslatedFields
 # Create your models here.
 class Category(TranslatableModel):
     translations = TranslatedFields(
-        name = models.CharField(max_length=200),
-        slug = models.SlugField(max_length=200, unique=True),
+        name=models.CharField(max_length=200),
+        slug=models.SlugField(max_length=200, unique=True),
     )
 
     class Meta:
-        #ordering = ['name']
-        #indexes = [
-        #    models.Index(fields=['name']),
-        #]
+        # ordering = ['name']
+        # indexes = [
+        #     models.Index(fields=['name']),
+        # ]
         verbose_name = 'category'
         verbose_name_plural = 'categories'
 
@@ -26,12 +26,11 @@ class Category(TranslatableModel):
         )
     
 
-class Product(TranslatedFields):
+class Product(TranslatableModel):
     translations = TranslatedFields(
-        name = models.CharField(max_length=200),
-        slug = models.SlugField(max_length=200),
-        description = models.TextField(blank=True)
-
+        name=models.CharField(max_length=200),
+        slug=models.SlugField(max_length=200),
+        description=models.TextField(blank=True),
     )
     category = models.ForeignKey(
         Category,
@@ -48,11 +47,11 @@ class Product(TranslatedFields):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
-    class Meta: 
-        #ordering = ['name']
+    class Meta:
+        # ordering = ['name']
         indexes = [
-        #    models.Index(fields=['id', 'slug']),
-        #    models.Index(fields=['name']),
+            # models.Index(fields=['id', 'slug']),
+            # models.Index(fields=['name']),
             models.Index(fields=['-created']),
         ]
 
