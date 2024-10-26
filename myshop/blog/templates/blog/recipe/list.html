@@ -1,0 +1,29 @@
+{% extends "blog/base.html" %}
+
+{% block title%}My Blog Recipes{% endblock %}
+
+{% block content %}
+  <h1>Recipes</h1>
+  {% if cuisineType %}
+    <h2>Recipes tagged with "{{ cuisineType.name }}"</h2>
+  {% endif %}
+  {% for recipe in recipes %}
+  {% with images=recipe.recipe_assoc.all %}
+    <h2>
+        <a href="{{ recipe.get_absolute_url }}">
+            {{ recipe.title }}
+        </a>
+    </h2>
+    <p class="tags">
+      Cuisine Type: 
+      <a href="{{ images.0.get_absolute_url }}" %}">
+          {{ recipe.get_cuisineType_display }}
+      </a>
+    </p>
+    <p class="date">
+        Published {{ recipe.publish }} by {{ recipe.author }}
+    </p>
+  {% endwith %}
+  {% endfor %}
+  {% include "pagination.html" with page=recipes %}
+{% endblock %}

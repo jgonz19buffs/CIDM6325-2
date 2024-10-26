@@ -1,0 +1,14 @@
+{% extends "blog/base.html" %}
+
+{% block title%}My Blog{% endblock %}
+
+{% block content %}
+  <h1>Welcome to My Blog</h1>
+  <h2>
+    <a href="{% url 'blog:post_list' %}">Posts</a> 
+  </h2>
+  
+  <h2>
+    <a href="{% url 'blog:recipe_list' %}">Recipes</a>
+  </h2>
+{% endblock %}

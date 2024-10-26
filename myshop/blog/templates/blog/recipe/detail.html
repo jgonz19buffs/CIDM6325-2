@@ -1,0 +1,40 @@
+{% extends "blog/base.html" %}
+
+{% block title %}{{ recipe.title }}{% endblock %}
+
+{% block content %}
+  <h1>{{ recipe.title }}</h1>
+  <p class="date">
+    Published {{ recipe.publish }} by {{ recipe.author }}
+  </p>
+  <h2>Ingredients</h2>
+  {{ recipe.ingredients|linebreaks}}
+  <h2>Instructions</h2>
+  {{ recipe.instructions|linebreaks}}
+  
+  <h2>Similar recipes</h2>
+  {% for recipe in similar_recipes %}
+    <p>
+      <a href="{{ post.get_absolute_url }}">{{ recipe.title }}</a>
+    </p>
+  {% empty %}
+    There are no similar recipes yet.
+  {% endfor %}
+  
+  {% with reviews.count as total_reviews %}
+    <h2>
+      {{ total_reviews}} review{{total_reviews|pluralize}}
+    </h2>
+  {% endwith %}
+  {% for review in reviews %}
+    <div class="comment">
+      <p class="info">
+        Review {{ forloop.counter }} by {{ review.name }}, rating: {{ review.rating }}
+      </p>
+      {{ review.body|linebreaks }}
+    </div>
+  {% empty %}
+    <p>There are no reviews.</p>
+  {% endfor %}
+  {% include "blog/recipe/includes/review_form.html" %}
+{% endblock %}
