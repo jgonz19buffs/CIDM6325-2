@@ -9,6 +9,36 @@
   <body>
     <div id="header">
       <a href="/" class="logo">{% translate "My shop" %}</a>
+      <ul class="menu">
+        <li {% if section == "posts" %}class="selected"{% endif %}>
+          <a href="{% url "blog:post_list" %}">{% translate "Posts" %}</a>
+        </li>
+        <li {% if section == "recipes" %}class="selected"{% endif %}>
+          <a href="{% url "blog:recipe_list" %}">{% translate "Recipes" %}</a>
+        </li>
+        {% if request.user.is_authenticated %}
+        <li {% if section == "dashboard" %}class="selected"{% endif %}>
+          <a href="{% url "dashboard" %}">{% translate "My dashboard" %}</a>
+        </li>
+        <li {% if section == "images" %}class="selected"{% endif %}>
+          <a href="{% url "images:list" %}">{% translate "Images" %}</a>
+        </li>
+        <li {% if section == "people" %}class="selected"{% endif %}>
+          <a href="{% url "user_list" %}">{% translate "People" %}</a>
+        </li>
+        {% endif %}
+      </ul>
+      <span class="user">
+        {% if request.user.is_authenticated %}
+          Hello {{ request.user.first_name |default:request.user.username}},
+          <form action="{% url "logout" %}" method="post">
+            <button type="submit">Logout</button>
+            {% csrf_token %}
+          </form>
+        {% else %}
+          <a href="{% url "login" %}">Log-in</a>
+        {% endif %}
+      </span>      
       {% get_current_language as LANGUAGE_CODE %}
       {% get_available_languages as LANGUAGES %}
       {% get_language_info_list for LANGUAGES as languages %}

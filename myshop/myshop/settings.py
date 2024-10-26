@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from decouple import config
 from django.utils.translation import gettext_lazy as _
 from django.urls import reverse_lazy
+from os.path import join
 from pathlib import Path
 from . import key
 
@@ -101,7 +102,10 @@ ROOT_URLCONF = 'myshop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            join(BASE_DIR, 'templates'),
+            
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
