@@ -18,17 +18,37 @@ from django.conf import settings
 from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.contrib.sitemaps.views import sitemap
 from django.urls import include, path
 from django.utils.translation import gettext_lazy as _
+from blog.sitemaps import PostSitemap,TagSitemap
 from payment import webhooks
+
+sitemaps = {
+    'posts': PostSitemap,
+    'tags': TagSitemap,
+}
 
 urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
+    path('account/', include('account.urls')),
+    path('blog/', include('blog.urls',namespace='blog')),
     path(_('cart/'), include('cart.urls', namespace='cart')),
+    path('images/', include('images.urls', namespace='images')),
     path(_('orders/'), include('orders.urls', namespace='orders')),
     path(_('payment/'), include('payment.urls', namespace='payment')),
     path(_('coupons/'), include('coupons.urls', namespace='coupons')),
     path('rosetta/', include('rosetta.urls')),
+    path(
+        'sitemap.xml',
+        sitemap,
+        {'sitemaps': sitemaps},
+        name='django.contrib.sitemaps.views.sitemap'
+    ),
+    path(
+        'social-auth/',
+        include('social_django.urls', namespace='social')
+    ),
     path('', include('shop.urls', namespace='shop')),
 )
 
