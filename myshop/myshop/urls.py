@@ -31,10 +31,10 @@ sitemaps = {
 
 urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
-    path('account/', include('account.urls')),
-    path('blog/', include('blog.urls',namespace='blog')),
+    path(_('account/'), include('account.urls')),
+    path(_('blog/'), include('blog.urls',namespace='blog')),
     path(_('cart/'), include('cart.urls', namespace='cart')),
-    path('images/', include('images.urls', namespace='images')),
+    path(_('images/'), include('images.urls', namespace='images')),
     path(_('orders/'), include('orders.urls', namespace='orders')),
     path(_('payment/'), include('payment.urls', namespace='payment')),
     path(_('coupons/'), include('coupons.urls', namespace='coupons')),
