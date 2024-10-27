@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-26 23:36-0500\n"
+"POT-Creation-Date: 2024-10-27 07:56-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -236,6 +236,66 @@ msgstr ""
 msgid "user/<username>/"
 msgstr ""
 
+#: .\blog\templates\blog\post\comment.html:4
+msgid "Add a comment"
+msgstr ""
+
+#: .\blog\templates\blog\post\comment.html:8
+msgid "Your comment has been added"
+msgstr ""
+
+#: .\blog\templates\blog\post\comment.html:9
+msgid "Back to the post"
+msgstr ""
+
+#: .\blog\templates\blog\post\detail.html:10
+#: .\blog\templates\blog\post\list.html:27
+#: .\blog\templates\blog\recipe\detail.html:9
+#: .\blog\templates\blog\recipe\list.html:25
+msgid "Published"
+msgstr ""
+
+#: .\blog\templates\blog\post\detail.html:10
+#: .\blog\templates\blog\post\detail.html:34
+#: .\blog\templates\blog\post\list.html:27
+#: .\blog\templates\blog\recipe\detail.html:9
+#: .\blog\templates\blog\recipe\detail.html:33
+#: .\blog\templates\blog\recipe\list.html:25
+msgid "by"
+msgstr ""
+
+#: .\blog\templates\blog\post\detail.html:15
+msgid "Share this post"
+msgstr ""
+
+#: .\blog\templates\blog\post\detail.html:18
+msgid "Similar posts"
+msgstr ""
+
+#: .\blog\templates\blog\post\detail.html:24
+msgid "There are no similar posts yet"
+msgstr ""
+
+#: .\blog\templates\blog\post\detail.html:28
+msgid "comment"
+msgstr ""
+
+#: .\blog\templates\blog\post\detail.html:34
+msgid "Comment"
+msgstr ""
+
+#: .\blog\templates\blog\post\detail.html:40
+msgid "There are no comments"
+msgstr ""
+
+#: .\blog\templates\blog\post\includes\comment_form.html:3
+msgid "Add a new comment"
+msgstr ""
+
+#: .\blog\templates\blog\post\includes\comment_form.html:13
+msgid "Add comment"
+msgstr ""
+
 #: .\blog\templates\blog\post\list.html:5
 msgid "My Blog Posts"
 msgstr ""
@@ -248,14 +308,96 @@ msgstr ""
 msgid "Posts tagged with"
 msgstr ""
 
-#: .\blog\templates\blog\post\list.html:27
-#: .\blog\templates\blog\recipe\list.html:25
-msgid "Published"
+#: .\blog\templates\blog\post\search.html:5
+msgid "Search"
 msgstr ""
 
-#: .\blog\templates\blog\post\list.html:27
-#: .\blog\templates\blog\recipe\list.html:25
-msgid "by"
+#: .\blog\templates\blog\post\search.html:9
+msgid "Posts containing"
+msgstr ""
+
+#: .\blog\templates\blog\post\search.html:12
+msgid "Found"
+msgstr ""
+
+#: .\blog\templates\blog\post\search.html:12
+msgid "result"
+msgstr ""
+
+#: .\blog\templates\blog\post\search.html:23
+msgid "There are no results for your query"
+msgstr ""
+
+#: .\blog\templates\blog\post\search.html:25
+msgid "Search again"
+msgstr ""
+
+#: .\blog\templates\blog\post\search.html:27
+msgid "Search for posts"
+msgstr ""
+
+#: .\blog\templates\blog\post\share.html:4
+msgid "Share a post"
+msgstr ""
+
+#: .\blog\templates\blog\post\share.html:8
+msgid "E-mail successfully sent"
+msgstr ""
+
+#: .\blog\templates\blog\post\share.html:10
+msgid "was successfully sent to"
+msgstr ""
+
+#: .\blog\templates\blog\post\share.html:13
+msgid "Share"
+msgstr ""
+
+#: .\blog\templates\blog\post\share.html:13
+msgid "by email"
+msgstr ""
+
+#: .\blog\templates\blog\post\share.html:17
+msgid "Send e-mail"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\detail.html:11
+msgid "Ingredients"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\detail.html:13
+msgid "Instructions"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\detail.html:16
+msgid "Similar recipes"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\detail.html:22
+msgid "There are no similar recipes yet"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\detail.html:27
+msgid "review"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\detail.html:33
+msgid "Review"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\detail.html:33
+msgid "rating"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\detail.html:38
+msgid "There are no reviews"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\includes\review_form.html:2
+msgid "Add a new review"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\includes\review_form.html:13
+msgid "Add review"
 msgstr ""
 
 #: .\blog\templates\blog\recipe\list.html:4
@@ -268,6 +410,22 @@ msgstr ""
 
 #: .\blog\templates\blog\recipe\list.html:9
 msgid "Recipes tagged with"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\list.html:19
+msgid "Cuisine Type"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\review.html:4
+msgid "Add a review"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\review.html:8
+msgid "Your review has been added"
+msgstr ""
+
+#: .\blog\templates\blog\recipe\review.html:9
+msgid "Back to the recipe"
 msgstr ""
 
 #: .\blog\templates\pagination.html:8

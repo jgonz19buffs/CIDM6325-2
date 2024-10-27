@@ -1,11 +1,12 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block title %}Add a review{% endblock %}
+{% block title %}{% translate "Add a review" %}{% endblock %}
 
 {% block content%}
   {% if review %}
-    <h2>Your review has been added.</h2>
-    <p><a href="{{ recipe.get_absolute_url }}">Back to the recipe</a></p>
+    <h2>{% translate "Your review has been added" %}.</h2>
+    <p><a href="{{ recipe.get_absolute_url }}">{% translate "Back to the recipe" %}</a></p>
   {% else %}
     {% include "blog/recipe/includes/review_form.html" %}
   {% endif %}

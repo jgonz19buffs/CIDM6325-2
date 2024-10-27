@@ -1,4 +1,5 @@
-<h2>Add a new review</h2>
+{% load i18n %}
+<h2>{% translate "Add a new review" %}</h2>
 <form action="{% url "blog:recipe_review" recipe.id %}" method="post">
   <div class="left">
     {{ form.name.as_field_group }}
@@ -9,5 +10,5 @@
   {{ form.body.as_field_group}}
   {{ form.rating.as_field_group}}
   {% csrf_token %}
-  <p><input type="submit" value="Add review"></p>
+  <p><input type="submit" value="{% translate "Add review" %}"></p>
 </form>
