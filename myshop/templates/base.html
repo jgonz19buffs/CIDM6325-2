@@ -30,9 +30,9 @@
       </ul>
       <span class="user">
         {% if request.user.is_authenticated %}
-          Hello {{ request.user.first_name |default:request.user.username}},
+        {% translate "Hello" %} {{ request.user.first_name |default:request.user.username}},
           <form action="{% url "logout" %}" method="post">
-            <button type="submit">Logout</button>
+            <button type="submit">{% translate "Logout" %}</button>
             {% csrf_token %}
           </form>
         {% else %}

@@ -1,16 +1,19 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block title %}Dashboard{% endblock %}
+{% block title %} {% translate "Dashboard" %} {% endblock %}
 
 {% block content %}
-  <h1>Dashboard</h1>
+  <h1> {% translate "Dashboard" %} </h1>
   {% with total_images_created=request.user.images_created.count %}
-    <p>Welcome to your dashboard. You have bookmarked {{ total_images_created}} image{{ total_images_created|pluralize }}.</p>
+    <p>{% translate "Welcome to your dashboard. You have bookmarked" %} {{ total_images_created}} image{{ total_images_created|pluralize }}.</p>
   {% endwith %}
-  <p>Drag the following button to your bookdmarks toolbar to bookmark images from other websites → <a href="javascript:{% include "bookmarklet_launcher.js "%}" class="button">Bookmark it</a></p>
-  <p>You can also <a href="{% url "edit" %}">edit your profile</a> or <a href="{% url "password_change" %}">change your password</a>.</p>
+  <p>
+    {% translate "Drag the following button to your bookmarks toolbar to bookmark images from other websites" %}
+     →<a href="javascript:{% include "bookmarklet_launcher.js "%}" class="button">{% translate "Bookmark it" %}</a></p>
+  <p>{% translate "You can also" %} <a href="{% url "edit" %}">{% translate "edit your profile" %}</a> or <a href="{% url "password_change" %}">{% translate "change your password" %}</a>.</p>
 
-  <h2>What's happening</h2>
+  <h2>{% translate "What's happening" %}</h2>
   <div id="action-list">
     {% for action in actions %}
       {% include "actions/action/detail.html" %}

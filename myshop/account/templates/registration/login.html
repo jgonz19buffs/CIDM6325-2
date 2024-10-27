@@ -1,18 +1,20 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block title %}Log-in{% endblock %}
+{% block title %}{% translate "Log-in" %}{% endblock %}
 
 {% block content %}
-  <h1>Log-in</h1>
+  <h1>{% translate "Log-in" %}</h1>
   {% if forms.errors %}
     <p>
-        Your username and password didn't match.
-        Please try again.
+      {% translate "Your username and password didn't match" %}.
+      {% translate "Please try again" %}.
     </p>
   {% else %}
     <p>
-      Please, use the following form to log-in.
-      If you don't have an account <a href="{% url "register" %}">register here</a>.
+      {% translate "Please, use the following form to log-in" %}. 
+      {% translate "If you don't have an account" %} 
+      <a href="{% url "register" %}">{% translate "register here" %}</a>.
     </p>
   {% endif %}
   <div class="login-form">
@@ -24,7 +26,7 @@
     </form>
     <p>
       <a href="{% url "password_reset" %}">
-        Forgotten your password?
+        {% translate "Forgotten your password" %}?
       </a>
     </p>
   </div>
@@ -32,7 +34,7 @@
     <ul>
       <li class="google">
         <a href="{% url "social:begin" "google-oauth2" %}">
-          Sign in with Google
+          {% translate "Sign in with Google" %}
         </a>
       </li>
     </ul>

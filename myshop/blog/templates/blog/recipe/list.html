@@ -1,11 +1,12 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block title%}My Blog Recipes{% endblock %}
+{% block title%}{% translate "My Blog Recipes" %}{% endblock %}
 
 {% block content %}
-  <h1>Recipes</h1>
+  <h1>{% translate "Recipes" %}</h1>
   {% if cuisineType %}
-    <h2>Recipes tagged with "{{ cuisineType.name }}"</h2>
+    <h2>{% translate "Recipes tagged with" %} "{{ cuisineType.name }}"</h2>
   {% endif %}
   {% for recipe in recipes %}
   {% with images=recipe.recipe_assoc.all %}
@@ -21,7 +22,7 @@
       </a>
     </p>
     <p class="date">
-        Published {{ recipe.publish }} by {{ recipe.author }}
+      {% translate "Published" %} {{ recipe.publish }} {% translate "by" %} {{ recipe.author }}
     </p>
   {% endwith %}
   {% endfor %}

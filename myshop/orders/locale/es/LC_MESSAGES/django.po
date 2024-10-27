@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 13:50-0500\n"
-"PO-Revision-Date: 2024-10-24 13:55+0000\n"
+"POT-Creation-Date: 2024-10-26 20:20-0500\n"
+"PO-Revision-Date: 2024-10-26 20:42+0000\n"
 "Last-Translator:   <jgonzalez19@buffs.wtamu.edu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
 
 #: .\orders\models.py:10
 msgid "first name"
@@ -61,6 +61,10 @@ msgid ""
 msgstr ""
 "\n"
 "%(code)s\\\" (%(discount)s%% descuento)"
+
+#: .\orders\templates\orders\order\create.html:28
+msgid "Total"
+msgstr "Total"
 
 #: .\orders\templates\orders\order\create.html:32
 msgid "Place order"

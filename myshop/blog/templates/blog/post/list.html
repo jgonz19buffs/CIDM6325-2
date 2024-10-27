@@ -1,12 +1,13 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% load blog_tags %}
 
-{% block title%}My Blog Posts{% endblock %}
+{% block title%}{% translate "My Blog Posts" %}{% endblock %}
 
 {% block content %}
-  <h1>Posts</h1>
+  <h1>{% translate "Posts" %}</h1>
   {% if tag %}
-    <h2>Posts tagged with "{{ tag.name }}"</h2>
+    <h2>{% translate "Posts tagged with" %} "{{ tag.name }}"</h2>
   {% endif %}
   {% for post in posts %}
     <h2>
@@ -23,7 +24,7 @@
       {% endfor %}
     </p>
     <p class="date">
-        Published {{ post.publish }} by {{ post.author }}
+      {% translate "Published" %} {{ post.publish }} {% translate "by" %} {{ post.author }}
     </p>
         {{ post.body|markdown|truncatewords_html:30 }}
   {% endfor %}

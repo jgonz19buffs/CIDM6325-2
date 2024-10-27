@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 13:50-0500\n"
-"PO-Revision-Date: 2024-10-24 13:54+0000\n"
+"POT-Creation-Date: 2024-10-26 22:25-0500\n"
+"PO-Revision-Date: 2024-10-26 22:26+0000\n"
 "Last-Translator:   <jgonzalez19@buffs.wtamu.edu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -17,7 +17,317 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
+
+#: .\account\templates\account\dashboard.html:4
+#: .\account\templates\account\dashboard.html:7
+msgid "Dashboard"
+msgstr "Mi panel de control"
+
+#: .\account\templates\account\dashboard.html:9
+msgid "Welcome to your dashboard. You have bookmarked"
+msgstr "Bienvenido a su panel de control. Ha marcado como favorito"
+
+#: .\account\templates\account\dashboard.html:12
+msgid ""
+"Drag the following button to your bookmarks toolbar to bookmark images from "
+"other websites"
+msgstr ""
+"Arrastre el siguiente botón a la barra de herramientas de marcadores para "
+"marcar imágenes de otros sitios web"
+
+#: .\account\templates\account\dashboard.html:13
+msgid "Bookmark it"
+msgstr "Márcalo como favorito"
+
+#: .\account\templates\account\dashboard.html:14
+msgid "You can also"
+msgstr "También puede"
+
+#: .\account\templates\account\dashboard.html:14
+msgid "edit your profile"
+msgstr "editar su perfil"
+
+#: .\account\templates\account\dashboard.html:14
+msgid "change your password"
+msgstr "cambiar su contraseña"
+
+#: .\account\templates\account\dashboard.html:16
+msgid "What's happening"
+msgstr "Qué está pasando"
+
+#: .\account\templates\account\edit.html:4
+#: .\account\templates\account\edit.html:7
+msgid "Edit your account"
+msgstr "Edita su cuenta"
+
+#: .\account\templates\account\edit.html:8
+msgid "You can edit your account using the following form"
+msgstr "Puede editar su cuenta mediante el siguiente formulario"
+
+#: .\account\templates\account\edit.html:13
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: .\account\templates\account\login.html:4
+#: .\account\templates\account\login.html:7
+#: .\account\templates\registration\login.html:4
+#: .\account\templates\registration\login.html:7
+msgid "Log-in"
+msgstr "Iniciar sesión"
+
+#: .\account\templates\account\login.html:8
+#: .\account\templates\registration\login.html:15
+msgid "Please, use the following form to log-in"
+msgstr "Por favor, utilice el siguiente formulario para iniciar sesión"
+
+#: .\account\templates\account\register.html:4
+#: .\account\templates\account\register.html:7
+msgid "Create an account"
+msgstr "Crear una cuenta"
+
+#: .\account\templates\account\register.html:8
+msgid "Please, sign up using the following form"
+msgstr "Por favor, utilice el siguiente formulario para iniciar sesión"
+
+#: .\account\templates\account\register_done.html:4
+#: .\account\templates\account\register_done.html:7
+msgid "Welcome"
+msgstr "Bienvenido"
+
+#: .\account\templates\account\register_done.html:9
+msgid " Your account has been successfully created."
+msgstr "Su cuenta se ha creado con éxito."
+
+#: .\account\templates\account\register_done.html:10
+msgid "Now you can"
+msgstr "Ahora puede"
+
+#: .\account\templates\account\register_done.html:10
+msgid "log in"
+msgstr "Iniciar sesión"
+
+#: .\account\templates\account\user\list.html:5
+#: .\account\templates\account\user\list.html:8 .\templates\base.html:27
+msgid "People"
+msgstr "Gente"
+
+#: .\account\templates\registration\logged_out.html:4
+#: .\account\templates\registration\logged_out.html:7
+msgid "Logged out"
+msgstr "Sesión cerrada"
+
+#: .\account\templates\registration\logged_out.html:9
+msgid "You have been successfully logged out"
+msgstr "Se ha cerrado la sesión con éxito"
+
+#: .\account\templates\registration\logged_out.html:10
+msgid "You can"
+msgstr "Puede"
+
+#: .\account\templates\registration\logged_out.html:10
+msgid "log-in again"
+msgstr "iniciar la sesión de nuevo"
+
+#: .\account\templates\registration\login.html:10
+msgid "Your username and password didn't match"
+msgstr "Tu nombre de usuario y contraseña no coinciden"
+
+#: .\account\templates\registration\login.html:11
+msgid "Please try again"
+msgstr "Por favor, inténtelo de nuevo"
+
+#: .\account\templates\registration\login.html:16
+msgid "If you don't have an account"
+msgstr "Si no tiene una cuenta"
+
+#: .\account\templates\registration\login.html:17
+msgid "register here"
+msgstr "regístrate aquí"
+
+#: .\account\templates\registration\login.html:29
+msgid "Forgotten your password"
+msgstr "¿Olvidaste tu contraseña"
+
+#: .\account\templates\registration\login.html:37
+msgid "Sign in with Google"
+msgstr "Iniciar sesión con Google"
+
+#: .\account\templates\registration\password_change_done.html:4
+#: .\account\templates\registration\password_change_done.html:7
+msgid "Password changed"
+msgstr "Contraseña cambiada"
+
+#: .\account\templates\registration\password_change_done.html:8
+msgid "Your password has been successfully changed."
+msgstr "Su contraseña se ha creado con éxito."
+
+#: .\account\templates\registration\password_change_form.html:4
+#: .\account\templates\registration\password_change_form.html:7
+msgid "Change your password"
+msgstr "Cambiar su contraseña"
+
+#: .\account\templates\registration\password_change_form.html:8
+msgid "Use the form below to change your password"
+msgstr "Utilice el siguiente formulario para cambiar su contraseña"
+
+#: .\account\templates\registration\password_reset_complete.html:4
+msgid "Password reset"
+msgstr "Contraseña reiniciada"
+
+#: .\account\templates\registration\password_reset_complete.html:7
+msgid "Password set"
+msgstr "Contraseña establecida"
+
+#: .\account\templates\registration\password_reset_complete.html:8
+msgid "Your password has been set. you can"
+msgstr "Su contraseña ha sido establecida. Puede"
+
+#: .\account\templates\registration\password_reset_complete.html:8
+msgid "log in now"
+msgstr "Iniciar sesión ahora"
+
+#: .\account\templates\registration\password_reset_confirm.html:4
+#: .\account\templates\registration\password_reset_confirm.html:7
+#: .\account\templates\registration\password_reset_done.html:4
+#: .\account\templates\registration\password_reset_done.html:7
+#: .\account\templates\registration\password_reset_form.html:4
+msgid "Reset your password"
+msgstr "Restablece tu contraseña"
+
+#: .\account\templates\registration\password_reset_confirm.html:9
+msgid "Please enter your new password twice"
+msgstr "Por favor, introduzca su nueva contraseña dos veces"
+
+#: .\account\templates\registration\password_reset_confirm.html:16
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset"
+msgstr ""
+"El enlace de restablecimiento de contraseña no era válido, posiblemente "
+"porque ya se había utilizado. Solicite un nuevo restablecimiento de "
+"contraseña"
+
+#: .\account\templates\registration\password_reset_done.html:8
+msgid "We've emailed you instructions for setting your password"
+msgstr ""
+"Le hemos enviado por correo electrónico instrucciones para configurar tu "
+"contraseña"
+
+#: .\account\templates\registration\password_reset_done.html:9
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with"
+msgstr ""
+"Si no recibe un correo electrónico, asegúrese de haber ingresado la "
+"dirección con la que se registró."
+
+#: .\account\templates\registration\password_reset_form.html:8
+msgid "Enter your e-mail address to obtain a new password"
+msgstr ""
+"Ingrese su dirección de correo electrónico para obtener una nueva contraseña"
+
+#: .\account\urls.py:10
+msgid "register/"
+msgstr "registrar/"
+
+#: .\account\urls.py:11
+msgid "edit/"
+msgstr "editar/"
+
+#: .\account\urls.py:12
+msgid "users/"
+msgstr "usuarios/"
+
+#: .\account\urls.py:13
+msgid "users/follow/"
+msgstr "usuarias/seguir/"
+
+#: .\account\urls.py:14
+msgid "user/<username>/"
+msgstr "usuarias/<username>/"
+
+#: .\blog\templates\blog\post\list.html:5
+msgid "My Blog Posts"
+msgstr "Publicaciones de Mi Blog"
+
+#: .\blog\templates\blog\post\list.html:8 .\templates\base.html:14
+msgid "Posts"
+msgstr "Publicaciones"
+
+#: .\blog\templates\blog\post\list.html:10
+msgid "Posts tagged with"
+msgstr "Publicaciones marcadas"
+
+#: .\blog\templates\blog\post\list.html:27
+#: .\blog\templates\blog\recipe\list.html:25
+msgid "Published"
+msgstr "Publicado"
+
+#: .\blog\templates\blog\post\list.html:27
+#: .\blog\templates\blog\recipe\list.html:25
+msgid "by"
+msgstr "por"
+
+#: .\blog\templates\blog\recipe\list.html:4
+msgid "My Blog Recipes"
+msgstr "Recetas de Mi Blog"
+
+#: .\blog\templates\blog\recipe\list.html:7 .\templates\base.html:17
+msgid "Recipes"
+msgstr "Recetas"
+
+#: .\blog\templates\blog\recipe\list.html:9
+msgid "Recipes tagged with"
+msgstr "Recetas marcadas"
+
+#: .\blog\templates\pagination.html:8
+msgid "Page"
+msgstr "Página"
+
+#: .\blog\templates\pagination.html:8
+msgid "of"
+msgstr "de"
+
+#: .\blog\urls.py:11
+msgid "posts/"
+msgstr "publicaciones"
+
+#: .\blog\urls.py:14
+msgid "posts/<int:year>/<int:month>/<int:day>/<slug:post>/"
+msgstr "publicaciones/<int:year>/<int:month>/<int:day>/<slug:post>/"
+
+#: .\blog\urls.py:18
+msgid "<int:post_id>/share/"
+msgstr "<int:post_id>/compartir/"
+
+#: .\blog\urls.py:20
+msgid "<int:post_id>/comment"
+msgstr "<int:post_id>/comentar"
+
+#: .\blog\urls.py:25
+msgid "feed/"
+msgstr "sección/"
+
+#: .\blog\urls.py:26
+msgid "search/"
+msgstr "buscar/"
+
+#: .\blog\urls.py:27
+msgid "recipes/"
+msgstr "recetas/"
+
+#: .\blog\urls.py:28
+msgid "recipes/<int:year>/<int:month>/<int:day>/<slug:recipe>"
+msgstr "recetas/<int:year>/<int:month>/<int:day>/<slug:recipe>"
+
+#: .\blog\urls.py:32
+msgid "<int:recipe_id>/review"
+msgstr "<int:recipe_id>/opinar"
+
+#: .\blog\urls.py:35
+msgid "cuisineType/<slug:tag_slug>/"
+msgstr "tipoDePlato/<slug:tag_slug>/"
 
 #: .\cart\forms.py:10
 msgid "Quantity"
@@ -27,28 +337,44 @@ msgstr "Cantidad"
 msgid "Coupon"
 msgstr "Cupon"
 
-#: .\myshop\settings.py:133
+#: .\images\templates\images\image\list.html:4
+#: .\images\templates\images\image\list.html:7
+msgid "Images bookmarked"
+msgstr "Imágenes marcadas como favoritas"
+
+#: .\myshop\settings.py:167
 msgid "English"
 msgstr "Inglés"
 
-#: .\myshop\settings.py:134
+#: .\myshop\settings.py:168
 msgid "Spanish"
 msgstr "Español"
 
-#: .\myshop\urls.py:27
+#: .\myshop\urls.py:34
+msgid "account/"
+msgstr "cuenta/"
+
+#: .\myshop\urls.py:35
+msgid "blog/"
+msgstr "blog/"
+
+#: .\myshop\urls.py:36
 msgid "cart/"
 msgstr "carro/"
 
-#: .\myshop\urls.py:28
+#: .\myshop\urls.py:37
+msgid "images/"
+msgstr "imágenes/"
+
+#: .\myshop\urls.py:38
 msgid "orders/"
 msgstr "pedidos/"
 
-#: .\myshop\urls.py:29
+#: .\myshop\urls.py:39
 msgid "payment/"
 msgstr "pago/"
 
-#: .\myshop\urls.py:30
-#| msgid "Coupon"
+#: .\myshop\urls.py:40
 msgid "coupons/"
 msgstr "cupon/"
 
@@ -64,15 +390,55 @@ msgstr "completado/"
 msgid "canceled/"
 msgstr "cancelado/"
 
-#: .\shop\templates\shop\base.html:6 .\shop\templates\shop\base.html:11
+#: .\shop\templates\shop\product\detail.html:22
+msgid "Add to cart"
+msgstr "Añadir al carro"
+
+#: .\shop\templates\shop\product\detail.html:27
+msgid "People who bought this also bought"
+msgstr "Personas que compraron esto también compraron"
+
+#: .\shop\templates\shop\product\list.html:10
+msgid "Categories"
+msgstr "Categorías"
+
+#: .\shop\templates\shop\product\list.html:13
+msgid "All"
+msgstr "Todo"
+
+#: .\shop\templates\shop\product\list.html:24
+msgid "Products"
+msgstr "Productos"
+
+#: .\templates\base.html:6 .\templates\base.html:11
 msgid "My shop"
 msgstr "Mi carro"
 
-#: .\shop\templates\shop\base.html:17
+#: .\templates\base.html:21
+msgid "My dashboard"
+msgstr "Mi panel de control"
+
+#: .\templates\base.html:24
+msgid "Images"
+msgstr "Imágenes"
+
+#: .\templates\base.html:33
+msgid "Hello"
+msgstr "Hola"
+
+#: .\templates\base.html:35
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: .\templates\base.html:46
+msgid "Language"
+msgstr "Idioma"
+
+#: .\templates\base.html:63
 msgid "Your cart"
 msgstr "Su carro"
 
-#: .\shop\templates\shop\base.html:19
+#: .\templates\base.html:65
 #, python-format
 msgid ""
 "\n"
@@ -83,17 +449,34 @@ msgid_plural ""
 "                %(items)s items, $%(total)s\n"
 "              "
 msgstr[0] ""
+"\n"
+"%(items)s artículo, $%(total)s"
 msgstr[1] ""
+"\n"
+"%(items)s artículos, $%(total)s"
 msgstr[2] ""
 
-#: .\shop\templates\shop\base.html:26
+#: .\templates\base.html:72
 msgid "Your cart is empty."
 msgstr "Su carro está vacío."
 
-#: .\shop\templates\shop\product\detail.html:22
-msgid "Add to cart"
-msgstr "Añadir al carro"
+#, fuzzy
+#~ msgid "Drag the following button"
+#~ msgstr ""
+#~ "Arrastre el siguiente botón a la barra de herramientas de marcadores para "
+#~ "marcar imágenes de otros sitios web"
 
-#: .\shop\templates\shop\product\detail.html:27
-msgid "People who bought this also bought"
-msgstr "Personas que compraron esto también compraron"
+#, fuzzy
+#~ msgid "image"
+#~ msgstr "imágenes/"
+
+#, fuzzy
+#~ msgid "Please, use the following form to log-in. If you don't have an account"
+#~ msgstr "Por favor, utilice el siguiente formulario para iniciar sesión"
+
+#~ msgid ""
+#~ "Welcome to your dashboard. You have bookmarked {{ total_images_created}} "
+#~ "image{{ total_images_created|pluralize }}"
+#~ msgstr ""
+#~ "Bienvenido a su panel de control. Ha marcado como favorito {{ "
+#~ "total_images_created}} imagen{{ total_images_created|pluralize }}"

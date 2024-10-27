@@ -10,3 +10,4 @@ cert.crt
 cert.key
 **/media/*
 /myshop/static/
+myshop/myshop_data.json

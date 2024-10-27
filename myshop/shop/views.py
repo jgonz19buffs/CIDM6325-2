@@ -13,7 +13,7 @@ def product_list(request, category_slug=None):
         category = get_object_or_404(
             Category,
             translations__language_code=language,
-            tranlsations__slug=category_slug
+            translations__slug=category_slug
         )
         products = products.filter(category=category)
     return render(
